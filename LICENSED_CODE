@@ -1,0 +1,5 @@
+# source code file
+src
+
+# cmake build files
+wsp/cmake/project

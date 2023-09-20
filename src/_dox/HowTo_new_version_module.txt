@@ -1,0 +1,30 @@
+
+. Step to follow when a library module version is changed
+
+. Step to follow when a new library module version is created
+    . files interested
+        . <ModuleName>/ModuleName>.h
+            . add the two following #define statement 
+                #elif (<MODULE_NAME>_VER == 2)
+  	            #include "v_<verions number>/<Module Name>.h"
+        . <ModuleName>/ModuleName>Manager.h
+            . idem as above
+        . <ModuleName>/ModuleName>Tbl.h
+            . idem as above
+        . <ModuleName>/<version>/<ModuleName>VerChk.h
+            . Update version: it must be equal directory version
+        . CMakeLists.txt
+            . sections interested
+                . set(CODE_FILES_LIB_<MODLULE_NAME>
+                    . update directory where are located the .cpp files
+                . add_executable(${EXECUTABLE}
+                    . make you sure that the previous definition "CODE_FILES_LIB_<MODLULE_NAME>" is present in the list
+                . target_compile_options(${EXECUTABLE} PRIVATE
+                    . update the version number
+                        .     -D<MODLULE_NAME>_VER=<version number>
+
+. Step to follow when a library module version is changed
+    . see the prevoius instruction about
+        . CMakeLists.txt
+    . only CMakeLists.txt must be update 
+    . the other files are already OK

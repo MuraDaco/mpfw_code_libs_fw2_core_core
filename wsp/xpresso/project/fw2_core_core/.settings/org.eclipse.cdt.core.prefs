@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/project/com.crt.advproject.config.lib.debug.917758567/MAIN_XXX_DIR/delimiter=\:
+environment/project/com.crt.advproject.config.lib.debug.917758567/MAIN_XXX_DIR/operation=append
+environment/project/com.crt.advproject.config.lib.debug.917758567/MAIN_XXX_DIR/value=${ProjDirPath}/../../../../../main/mpfw_code_main_${MAIN_NAME}
+environment/project/com.crt.advproject.config.lib.debug.917758567/append=true
+environment/project/com.crt.advproject.config.lib.debug.917758567/appendContributed=true
+environment/project/com.crt.advproject.config.lib.release.1278982396/MAIN_XXX_DIR/delimiter=\:
+environment/project/com.crt.advproject.config.lib.release.1278982396/MAIN_XXX_DIR/operation=append
+environment/project/com.crt.advproject.config.lib.release.1278982396/MAIN_XXX_DIR/value=${ProjDirPath}/../../../../../main/mpfw_code_main_${MAIN_NAME}
+environment/project/com.crt.advproject.config.lib.release.1278982396/append=true
+environment/project/com.crt.advproject.config.lib.release.1278982396/appendContributed=true

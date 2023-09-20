@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.crt.advproject.config.lib.debug.917758567">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.crt.advproject.config.lib.debug.917758567" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/fw2_core_core"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/fw2_core_core/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="fw2_core_core" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="Debug build" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.lib.debug.917758567" name="Debug" parent="com.crt.advproject.config.lib.debug" postannouncebuildStep="Performing post-build steps" postbuildStep="arm-none-eabi-size &quot;lib${BuildArtifactFileName}&quot; ; # arm-none-eabi-objdump -h -S &quot;lib${BuildArtifactFileName}&quot; &gt;&quot;${BuildArtifactFileBaseName}.lss&quot;">
+					<folderInfo id="com.crt.advproject.config.lib.debug.917758567." name="/" resourcePath="">
+						<toolChain id="com.crt.advproject.toolchain.lib.debug.1969613795" name="NXP MCU Tools" superClass="com.crt.advproject.toolchain.lib.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.lib.debug.1583633122" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.lib.debug"/>
+							<builder buildPath="${workspace_loc:/fw2_core_core}/Debug" id="com.crt.advproject.builder.lib.debug.713374185" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.crt.advproject.builder.lib.debug"/>
+							<tool id="com.crt.advproject.cpp.lib.debug.277516259" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.lib.debug">
+								<option id="com.crt.advproject.cpp.hdrlib.515276486" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" useByScannerDiscovery="false"/>
+								<option id="com.crt.advproject.cpp.fpu.1855348168" name="Floating point" superClass="com.crt.advproject.cpp.fpu" useByScannerDiscovery="true" value="com.crt.advproject.cpp.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.thumb.1683211762" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.cpp.specs.2113445841" name="Specs" superClass="com.crt.advproject.cpp.specs" useByScannerDiscovery="false" value="com.crt.advproject.cpp.specs.newlibnano" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.preprocessor.def.1500432576" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WP_PLATFORM_NXP"/>
+									<listOptionValue builtIn="false" value="CPU_LPC54608J512ET180"/>
+									<listOptionValue builtIn="false" value="CPU_LPC54608J512ET180_cm4"/>
+									<listOptionValue builtIn="false" value="FSL_RTOS_FREE_RTOS"/>
+									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
+									<listOptionValue builtIn="false" value="SERIAL_PORT_TYPE_UART=1"/>
+									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=1"/>
+									<listOptionValue builtIn="false" value="__MCUXPRESSO"/>
+									<listOptionValue builtIn="false" value="__USE_CMSIS"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="RS485_ADDRESS=0x34"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.591887933" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${FW2_WRAPPER_CORE_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${SDK_PLATFORM_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cg}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cs}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgFormatDigit/v_${fw2_core_core_DG_FORMAT_DIGIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgInterface/v_${fw2_core_core_DG_INTERFACE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dt/dtDef/v_${fw2_core_core_DT_DEF_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krEvent/v_${fw2_core_core_KR_EVENT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krInit/v_${fw2_core_core_KR_INIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krTimer/v_${fw2_core_core_KR_TIMER_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svState/v_${fw2_core_core_SV_STATE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svStateMachine/v_${fw2_core_core_SV_STATE_MACHINE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svSync/v_${fw2_core_core_SV_SYNC_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol/v_${fw2_core_core_UY_PROTOCOL_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol2/v_${fw2_core_core_UY_PROTOCOL2_VER}}"/>
+
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/common/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/sy/syThread/v_${fw2_wrapper_core_SY_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/tb/kr/krThread/v_${fw2_wrapper_core_TB_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/include}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F}"/>
+								</option>
+								<option id="com.crt.advproject.cpp.misc.dialect.1665529758" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" useByScannerDiscovery="true" value="com.crt.advproject.misc.dialect.gnupp14" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.lib.debug.option.optimization.level.495096793" name="Optimization Level" superClass="com.crt.advproject.cpp.lib.debug.option.optimization.level" useByScannerDiscovery="true" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.arch.1155144044" name="Architecture" superClass="com.crt.advproject.cpp.arch" useByScannerDiscovery="true" value="com.crt.advproject.cpp.target.cm4" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1926160935" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -Wfatal-errors -fno-common -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fno-rtti -fno-exceptions" valueType="string"/>
+								<inputType id="com.crt.advproject.compiler.cpp.input.1161353969" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.lib.debug.1042080379" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.def.symbols.1967865193" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__REDLIB__"/>
+								</option>
+								<option id="com.crt.advproject.gcc.thumb.1175591324" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1529394224" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${FW2_WRAPPER_CORE_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${SDK_PLATFORM_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cg}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cs}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgFormatDigit/v_${fw2_core_core_DG_FORMAT_DIGIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgInterface/v_${fw2_core_core_DG_INTERFACE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dt/dtDef/v_${fw2_core_core_DT_DEF_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krEvent/v_${fw2_core_core_KR_EVENT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krInit/v_${fw2_core_core_KR_INIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krTimer/v_${fw2_core_core_KR_TIMER_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svState/v_${fw2_core_core_SV_STATE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svStateMachine/v_${fw2_core_core_SV_STATE_MACHINE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svSync/v_${fw2_core_core_SV_SYNC_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol/v_${fw2_core_core_UY_PROTOCOL_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol2/v_${fw2_core_core_UY_PROTOCOL2_VER}}"/>
+
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/common/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/sy/syThread/v_${fw2_wrapper_core_SY_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/tb/kr/krThread/v_${fw2_wrapper_core_TB_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/include}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F}"/>
+								</option>
+								<inputType id="com.crt.advproject.compiler.input.1046557130" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.lib.debug.1728794297" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.debug">
+								<option id="com.crt.advproject.gas.thumb.1905592776" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.both.asm.option.include.paths.1410359500" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1023203934" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.869544034" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.ar.lib.debug.1323058132" name="MCU Archiver" superClass="com.crt.advproject.ar.lib.debug"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/dg/dgFormatDigit/v_${fw2_core_core_DG_FORMAT_DIGIT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/dg/dgInterface/v_${fw2_core_core_DG_INTERFACE_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/kr/krEvent/v_${fw2_core_core_KR_EVENT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/kr/krInit/v_${fw2_core_core_KR_INIT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/kr/krTimer/v_${fw2_core_core_KR_TIMER_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/sv/svState/v_${fw2_core_core_SV_STATE_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/sv/svStateMachine/v_${fw2_core_core_SV_STATE_MACHINE_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/sv/svSync/v_${fw2_core_core_SV_SYNC_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/uy/uyProtocol/v_${fw2_core_core_UY_PROTOCOL_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/uy/uyProtocol2/v_${fw2_core_core_UY_PROTOCOL2_VER}"/>
+
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/kr/krInit/v_${fw2_core_core_TB_KR_INIT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/kr/krThread/v_${fw2_core_core_TB_KR_THREAD_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/kr/krTimer/v_${fw2_core_core_TB_KR_TIMER_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/sv/svStateMachine/v_${fw2_core_core_TB_SV_STATE_MACHINE_VER}"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.crt.advproject.config.lib.release.1278982396">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.crt.advproject.config.lib.release.1278982396" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/fw2_core_core"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/fw2_core_core/Release"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="fw2_core_core" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="Release build" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.lib.release.1278982396" name="Release" parent="com.crt.advproject.config.lib.release" postannouncebuildStep="Performing post-build steps" postbuildStep="arm-none-eabi-size &quot;lib${BuildArtifactFileName}&quot; ; # arm-none-eabi-objdump -h -S &quot;lib${BuildArtifactFileName}&quot; &gt;&quot;${BuildArtifactFileBaseName}.lss&quot;">
+					<folderInfo id="com.crt.advproject.config.lib.release.1278982396." name="/" resourcePath="">
+						<toolChain id="com.crt.advproject.toolchain.lib.release.1251696542" name="NXP MCU Tools" superClass="com.crt.advproject.toolchain.lib.release">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.lib.release.1638774036" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.lib.release"/>
+							<builder buildPath="${workspace_loc:/fw2_core_core}/Release" id="com.crt.advproject.builder.lib.release.587410876" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.crt.advproject.builder.lib.release"/>
+							<tool id="com.crt.advproject.cpp.lib.release.2086459504" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.lib.release">
+								<option id="com.crt.advproject.cpp.thumb.2051443972" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.cpp.specs.136612541" name="Specs" superClass="com.crt.advproject.cpp.specs" useByScannerDiscovery="false" value="com.crt.advproject.cpp.specs.newlibnano" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.misc.dialect.474134205" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" useByScannerDiscovery="true" value="com.crt.advproject.misc.dialect.gnupp14" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.preprocessor.def.87575117" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="WP_PLATFORM_NXP"/>
+									<listOptionValue builtIn="false" value="CPU_LPC54608J512ET180"/>
+									<listOptionValue builtIn="false" value="CPU_LPC54608J512ET180_cm4"/>
+									<listOptionValue builtIn="false" value="FSL_RTOS_FREE_RTOS"/>
+									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
+									<listOptionValue builtIn="false" value="SERIAL_PORT_TYPE_UART=1"/>
+									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=1"/>
+									<listOptionValue builtIn="false" value="__MCUXPRESSO"/>
+									<listOptionValue builtIn="false" value="__USE_CMSIS"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="RS485_ADDRESS=0x34"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1583823035" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${FW2_WRAPPER_CORE_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${SDK_PLATFORM_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cg}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cs}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgFormatDigit/v_${fw2_core_core_DG_FORMAT_DIGIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgInterface/v_${fw2_core_core_DG_INTERFACE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dt/dtDef/v_${fw2_core_core_DT_DEF_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krEvent/v_${fw2_core_core_KR_EVENT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krInit/v_${fw2_core_core_KR_INIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krTimer/v_${fw2_core_core_KR_TIMER_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svState/v_${fw2_core_core_SV_STATE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svStateMachine/v_${fw2_core_core_SV_STATE_MACHINE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svSync/v_${fw2_core_core_SV_SYNC_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol/v_${fw2_core_core_UY_PROTOCOL_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol2/v_${fw2_core_core_UY_PROTOCOL2_VER}}"/>
+
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/common/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/sy/syThread/v_${fw2_wrapper_core_SY_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/tb/kr/krThread/v_${fw2_wrapper_core_TB_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/include}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F}"/>
+								</option>
+								<option id="com.crt.advproject.cpp.lib.release.option.optimization.level.844682813" name="Optimization Level" superClass="com.crt.advproject.cpp.lib.release.option.optimization.level" useByScannerDiscovery="true" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.lib.release.option.debugging.level.262708394" name="Debug Level" superClass="com.crt.advproject.cpp.lib.release.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.319513707" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -Wfatal-errors -fno-common -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fno-rtti -fno-exceptions" valueType="string"/>
+								<option id="com.crt.advproject.cpp.arch.1090395889" name="Architecture" superClass="com.crt.advproject.cpp.arch" useByScannerDiscovery="true" value="com.crt.advproject.cpp.target.cm4" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.fpu.1515540099" name="Floating point" superClass="com.crt.advproject.cpp.fpu" useByScannerDiscovery="true" value="com.crt.advproject.cpp.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.hdrlib.976289363" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" useByScannerDiscovery="false"/>
+								<inputType id="com.crt.advproject.compiler.cpp.input.1346411609" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.lib.release.870078780" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.release">
+								<option id="com.crt.advproject.gcc.thumb.1992153483" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.def.symbols.259227724" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__REDLIB__"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.138907323" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${FW2_WRAPPER_CORE_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${MAIN_NAME}/${SDK_PLATFORM_CONF_RPATH}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cg}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/cs}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgFormatDigit/v_${fw2_core_core_DG_FORMAT_DIGIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dg/dgInterface/v_${fw2_core_core_DG_INTERFACE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/dt/dtDef/v_${fw2_core_core_DT_DEF_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krEvent/v_${fw2_core_core_KR_EVENT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krInit/v_${fw2_core_core_KR_INIT_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/kr/krTimer/v_${fw2_core_core_KR_TIMER_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svState/v_${fw2_core_core_SV_STATE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svStateMachine/v_${fw2_core_core_SV_STATE_MACHINE_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/sv/svSync/v_${fw2_core_core_SV_SYNC_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol/v_${fw2_core_core_UY_PROTOCOL_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_core_core/src/uy/uyProtocol2/v_${fw2_core_core_UY_PROTOCOL2_VER}}"/>
+
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/common/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/kr/krThread/v_${fw2_wrapper_core_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/sy/syThread/v_${fw2_wrapper_core_SY_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/fw2_wrapper_core/nxp/src/tb/kr/krThread/v_${fw2_wrapper_core_TB_KR_THREAD_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/include}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/sdk_nxp/src/v_${sdk_nxp_SDK_PLATFORM_LIB_VER}/amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F}"/>
+								</option>
+								<inputType id="com.crt.advproject.compiler.input.601530861" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.lib.release.2024762400" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.release">
+								<option id="com.crt.advproject.gas.thumb.1589664743" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.both.asm.option.include.paths.548965160" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1823481885" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.44482574" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.ar.lib.release.1716216151" name="MCU Archiver" superClass="com.crt.advproject.ar.lib.release"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/dg/dgFormatDigit/v_${fw2_core_core_DG_FORMAT_DIGIT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/dg/dgInterface/v_${fw2_core_core_DG_INTERFACE_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/kr/krEvent/v_${fw2_core_core_KR_EVENT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/kr/krInit/v_${fw2_core_core_KR_INIT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/kr/krTimer/v_${fw2_core_core_KR_TIMER_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/sv/svState/v_${fw2_core_core_SV_STATE_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/sv/svStateMachine/v_${fw2_core_core_SV_STATE_MACHINE_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/sv/svSync/v_${fw2_core_core_SV_SYNC_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/uy/uyProtocol/v_${fw2_core_core_UY_PROTOCOL_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/uy/uyProtocol2/v_${fw2_core_core_UY_PROTOCOL2_VER}"/>
+
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/kr/krInit/v_${fw2_core_core_TB_KR_INIT_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/kr/krThread/v_${fw2_core_core_TB_KR_THREAD_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/kr/krTimer/v_${fw2_core_core_TB_KR_TIMER_VER}"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src/tb/sv/svStateMachine/v_${fw2_core_core_TB_SV_STATE_MACHINE_VER}"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="fw2_core_core.com.crt.advproject.projecttype.lib.185328385" name="Static Library" projectType="com.crt.advproject.projecttype.lib"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.917758567;com.crt.advproject.config.lib.debug.917758567.;com.crt.advproject.gas.lib.debug.1728794297;com.crt.advproject.assembler.input.869544034">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.release.1278982396;com.crt.advproject.config.lib.release.1278982396.;com.crt.advproject.gcc.lib.release.870078780;com.crt.advproject.compiler.input.601530861">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.917758567;com.crt.advproject.config.lib.debug.917758567.;com.crt.advproject.gcc.lib.debug.1042080379;com.crt.advproject.compiler.input.1046557130">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.release.1278982396;com.crt.advproject.config.lib.release.1278982396.;com.crt.advproject.cpp.lib.release.2086459504;com.crt.advproject.compiler.cpp.input.1346411609">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.release.1278982396;com.crt.advproject.config.lib.release.1278982396.;com.crt.advproject.gas.lib.release.2024762400;com.crt.advproject.assembler.input.44482574">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.917758567;com.crt.advproject.config.lib.debug.917758567.;com.crt.advproject.cpp.lib.debug.277516259;com.crt.advproject.compiler.cpp.input.1161353969">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

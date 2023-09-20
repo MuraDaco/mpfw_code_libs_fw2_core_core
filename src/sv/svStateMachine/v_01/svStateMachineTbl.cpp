@@ -1,0 +1,46 @@
+//  *******************************************************************************
+//  
+//  mpfw / fw2 - Multi Platform FirmWare FrameWork 
+//      library that contains the essential code that is used in every application
+//  Copyright (C) (2023) Marco Dau
+//  
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU Affero General Public License as published
+//  by the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//  
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU Affero General Public License for more details.
+//  
+//  You should have received a copy of the GNU Affero General Public License
+//  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//  
+//  You can contact me by the following email address
+//  marco <d o t> ing <d o t> dau <a t> gmail <d o t> com
+//  
+//  *******************************************************************************
+/*
+ * svStateMachineTbl.cpp
+ *
+ *  Created on: Sep 20, 2022
+ *      Author: Marco Dau
+ */
+
+// verify module version 
+#include "svStateMachineVerChk.h"
+
+#include "svStateMachineTbl.h"
+
+#include "../tt/sv/svStateMachine/v_01/ap/tt_ap_svStateMachine.h"
+
+svStateMachine* svStateMachineTbl::UnitsArray[] = {
+//	 &apTestStateMachine01::		StateMachineArray	[apTestStateMachine01::StMachFunc01]
+//	,&apTestStateMachine01::		StateMachineArray	[apTestStateMachine01::StMachFunc02]
+	 &tt_ap_svStateMachine::		g_StMach_1
+	,&tt_ap_svStateMachine::		g_StMach_2
+	,nullptr
+};
+
+
