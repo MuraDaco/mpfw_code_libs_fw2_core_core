@@ -31,7 +31,6 @@
 
 #set(LIBS_FW2_CORE_CORE_SRC_DIR      ${LIBS_FW2_CORE_CORE_DIR}/src                               )
 
-
 set(CODE_FILES_LIB_KR_EVENT
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_EVENT_DIR}/krEvent.cpp
 )
@@ -41,9 +40,9 @@ set(CODE_FILES_LIB_KR_INIT
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_INIT_DIR}/krInitStaticManager.cpp
 )
 
-set(CODE_FILES_LIB_KR_TIMER
+set(CODE_FILES_LIB_KR_TIMER 
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_TIMER_DIR}/krTimer.cpp
-    ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_TIMER_DIR}/KrTimerManager.cpp
+    ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_TIMER_DIR}/krTimerManager.cpp
 )
 
 set(CODE_FILES_LIB_SV_SYNC
@@ -74,7 +73,6 @@ set(CODE_FILES_LIB_TB
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/tb/${TB_KR_TIMER_CPP_DIR}/krTimerTbl.cpp
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/tb/${TB_SV_STATE_MACHINE_CPP_DIR}/svStateMachineTbl.cpp
 )
-
 
 
 ## ******************************************************************
