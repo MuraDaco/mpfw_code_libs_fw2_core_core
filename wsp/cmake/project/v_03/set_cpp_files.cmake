@@ -43,7 +43,7 @@ set(CODE_FILES_LIB_KR_INIT
 
 set(CODE_FILES_LIB_KR_TIMER
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_TIMER_DIR}/krTimer.cpp
-    ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_TIMER_DIR}/krTimerManager.cpp
+    ${LIBS_FW2_CORE_CORE_SRC_DIR}/kr/${KR_TIMER_DIR}/KrTimerManager.cpp
 )
 
 set(CODE_FILES_LIB_SV_SYNC

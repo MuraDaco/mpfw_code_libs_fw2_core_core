@@ -24,6 +24,7 @@
 ##################################################################################
 ## _______________________________________________________________________________
 ## RELATIVE PATH Definitions
+trace_execution()
 
 ##################################################################################
 ## Relative path from CMakeLists.txt project folder                             ##
@@ -59,6 +60,11 @@ set(CODE_FILES_LIB_SV_STATE_MACHINE
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/sv/${SV_STATE_MACHINE_DIR}/svStateMachineManager.cpp
 )
 
+set(CODE_FILES_LIB_UY_PROTOCOL
+    ${LIBS_FW2_CORE_CORE_SRC_DIR}/uy/${UY_PROTOCOL_DIR}/uyProtocol.cpp
+    ${LIBS_FW2_CORE_CORE_SRC_DIR}/uy/${UY_PROTOCOL2_DIR}/uyProtocol2.cpp
+)
+
 set(CODE_FILES_LIB_DG_INTERFACE
     ${LIBS_FW2_CORE_CORE_SRC_DIR}/dg/${DG_INTERFACE_DIR}/dgInterface.cpp
 )
@@ -91,9 +97,12 @@ set(CODE_CPP_FILES_FW2_LIB
     ${CODE_FILES_LIB_SV_STATE}
     ${CODE_FILES_LIB_SV_STATE_MACHINE}
 
+    ${CODE_FILES_LIB_UY_PROTOCOL}
     ${CODE_FILES_LIB_DG_FORMAT_DIGIT}
     ${CODE_FILES_LIB_DG_INTERFACE}
 
     ${CODE_FILES_LIB_TB}
 
 )
+
+end_include()
